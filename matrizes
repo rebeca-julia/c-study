@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+
+	int m1[10][2];
+	int j = 0;
+	int z = 0, soma[2] = { 0, 0 };
+
+	for (int i = 0; i < 10; i++)
+	{
+		for (int k = 0; k < 2; k++)
+		{
+			m1[i][k] = (i + k + 4) * (i + k + 3);
+		}
+	}
+
+	while (j < 10)
+	{
+		if (j % 2 == 0)
+		{
+			do
+			{
+				if (z)soma[1] += m1[j][z];
+				else soma[0] += m1[j][z];
+				z++;
+			}
+
+			while (z < 2);
+			z = z++;
+			j++;
+
+		}
+	}
+
+	printf("\nsoma[0]=%d\n", soma[0]);
+	printf("\nsoma[1]=%d\n", soma[1]);
+}
