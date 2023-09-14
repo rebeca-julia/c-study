@@ -13,3 +13,20 @@ int main()
 
 
 }
+
+
+#include <stdio.h>
+
+int main()
+{
+	char str1[] = "Brasil";
+	char str2[20]; 
+	int i = 0;
+
+	for (int k=0; k<7; k++)
+	{
+		str2[k] = str1[k];
+	}
+	printf("str2=%s", str2);
+
+}
