@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+	char str1[] = "Brasil";
+	char str2[20]; 
+	int i = 0;
+
+	while (str2[i++] = str1[i]);
+	{
+		printf("str2=%s", str2);
+	}
+
+
+}
