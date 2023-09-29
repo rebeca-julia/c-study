@@ -4,7 +4,7 @@
 #include "tiposdados.h"
 
 
-void escrevediasemana(diasemana dia)
+void escrevediasemana(diasemana dia)//argumento da funcao
 {
 	switch (dia)
 	{
