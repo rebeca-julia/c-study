@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+
+typedef struct 
+{
+	char Nome[100];
+	char Sobrenome[100];
+	int idade;
+}DadosPessoais;
+
+
+
+int main() {
+
+	//struct DadosPessoais Joao;
+	DadosPessoais Joao;
+
+	strcpy(Joao.Nome, "Joao");
+	strcpy(Joao.Sobrenome, "Souza");
+	Joao.idade = 20;
+
+	printf("Nome=%s\n", Joao.Nome);
+	printf("Sobrenome=%s\n", Joao.Sobrenome);
+	printf("Idade=%d\n", Joao.idade);
+
+}
