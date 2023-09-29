@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <string.h>
+
+#include "tiposdados.h"
+
+
+
+int main() {
+
+	//struct DadosPessoais Joao;
+	DadosPessoais2 Joao;
+
+	strcpy(Joao.Nome, "Joao");
+	printf("Nome=%s\n", Joao.Nome);
+	strcpy(Joao.Sobrenome, "Souza");
+	printf("Nome=%s\n", Joao.Nome);
+	Joao.idade = 20;
+	printf("Nome=%s\n", Joao.Nome);
+	
+
+	//printf("Nome=%s\n", Joao.Nome);
+	//printf("Sobrenome=%s\n", Joao.Sobrenome);
+	//printf("Idade=%d\n", Joao.idade);
+
+}
+
+
+
+#pragma once
+typedef struct
+{
+	char Nome[100];
+	char Sobrenome[200];
+	int idade;
+}DadosPessoais;
+
+typedef union
+{
+	char Nome[100];
+	char Sobrenome[200];
+	int idade;
+}DadosPessoais2;
+
+
+#pragma once
+typedef struct
+{
+	char Nome[100];
+	char Sobrenome[200];
+	int idade;
+}DadosPessoais;
+
+typedef union
+{
+	char Nome[100];
+	char Sobrenome[200];
+	int idade;
+}DadosPessoais2;
+
+
