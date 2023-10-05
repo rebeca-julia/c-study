@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+	int M1[10];
+		int* p = NULL;
+
+		for (int i = 0; i < 10; i++) 
+		{
+			M1[i] = 2 * i + 1;
+			printf("M1[%d]\n", M1[i]);
+		}
+		
+		p = M1; *p = 33;
+		p = &M1[5]; *p = 77;
+		*(p + 1) = 18;
+		*(p - 2) = 43;
+		
+			for (int i = 0; i < 10; i++)
+			
+				printf("M1[%d]\n", M1[i]);
+			
+}
