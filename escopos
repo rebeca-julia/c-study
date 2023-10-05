@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int x = 18;//global
+
+		int f1(int y) {
+		printf("x=%d y=%d\n", x, y);// global e local
+	}
+
+		int main() {
+			int x = 4;//local
+			printf("x=%d\n", x);//local
+			f1(x);//local
+			printf("x=%d\n", x);//local
+			{
+
+				printf("x=%d\n", x);//local
+				int x = 10;//local
+				printf("x=%d\n", x);//local
+			}
+		}
