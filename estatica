@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int f1() 
+{
+	static int cont = 0;
+	cont++;
+	return cont;
+}
+
+int main() {
+	for (int i = 0; i < 10; i++)
+	{
+		int ret;
+		ret = f1();
+		printf("ret=%d\t", ret);
+		
+	}
+}
+
