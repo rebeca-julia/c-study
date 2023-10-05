@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int f1(int* z1)
+{
+	*z1 = *z1 + 34;
+}
+int f2(int z2)
+{
+	z2 = z2 + 18;
+}
+int main() 
+{
+	int x = 4;
+	
+	printf("x%d\n", x);
+	f2(x);
+	printf("x%d\n", x);
+	f1(&x);
+	printf("x%d\n", x);
+}	
